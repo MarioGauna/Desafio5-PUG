@@ -44,7 +44,6 @@ router.get('/productos',(req,res)=>{
 
 router.post('/productos',(req,res)=>{
     const producto= req.body
-	console.log(producto)
 	let countId=1;
 	if(products.length === 0){
 		let newId=countId;
