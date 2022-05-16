@@ -1,0 +1,15 @@
+block lista
+    table(class="table table-striped")
+        thead
+            tr
+                th(scope="col") ID
+                th(scope="col") Nombre
+                th(scope="col") Precio
+                th(scope="col") Foto
+        tbody
+            each val in products
+                tr
+                    td(class="table-info")= val.id
+                    td(class="table-info")= val.title
+                    td(class="table-info")= val.price
+                    td(class="table-info"): img(src=val.image, alt="No image" width="20px") 

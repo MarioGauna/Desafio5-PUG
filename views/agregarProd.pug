@@ -1,0 +1,17 @@
+block formulario
+    div( class="container" style="background-color:rgb(79, 143, 143); width: 500px; height:auto; padding-bottom: 10px;")
+                h1 Agregar producto
+                br
+                form(action="/productos" method="post" enctype="multipart/form-data")
+                    div(class="mb-3")
+                        label(for="exampleFormControlInput1" class="form-label" style="font-weight: bold;") Nombre
+                        input(type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Nombre")
+                    div(class="mb-3")
+                        label(for="exampleFormControlInput1" class="form-label" style="font-weight: bold;") Precio
+                        input(type="text" class="form-control" id="exampleFormControlInput1" name="price" placeholder="Precio")
+                    div(class="mb-3")
+                        label(for="exampleFormControlInput1" class="form-label" style="font-weight: bold;") Imagen
+                        input(type="url" class="form-control" id="exampleFormControlInput1" name="image")
+                    button(type="submit" class="btn btn-primary") Guardar
+                br
+                a(href="/productos" type="button" class="btn btn-primary") Ver listado
